@@ -1,0 +1,222 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AiShare Lab</title>
+  <link href="CSS/share/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link rel="stylesheet" href="CSS/000/main.css">
+  <link rel="stylesheet" href="CSS/000/responsive.css">
+  <link rel="stylesheet" href="CSS/share/animate.min.css">
+  <link rel="stylesheet" href="CSS/share/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/000/preloader.css">
+  <script src="JS/share/modernizr.js"></script>
+  <script src="JS/share/pace.min.js"></script>
+</head>
+
+<body>
+
+  <section role="banner" id="home">
+    <header id="header">
+      <div class="header-content clearfix"> <a class="logo">
+          AiShare Lab</a>
+      </div>
+    </header>
+  </section>
+  <section>
+    <div>
+      &emsp;
+      <!--A-->
+    </div>
+  </section>
+  <section>
+    <div>
+      &emsp;
+      <!--i-->
+    </div>
+  </section>
+  <section>
+    <div>
+      &emsp;
+      <!--S-->
+    </div>
+  </section>
+  <section>
+    <div>
+      &emsp;
+      <!--h-->
+    </div>
+  </section>
+  <section>
+    <div>
+      &emsp;
+      <!--a-->
+    </div>
+  </section>
+  <section>
+    <div>
+      &emsp;
+      <!--r-->
+    </div>
+  </section>
+  <section>
+    <div>
+      &emsp;
+      <!--e-->
+    </div>
+  </section>
+  <section>
+    <div>
+      &emsp;
+      <!--L-->
+    </div>
+  </section>
+  <section>
+    <div>
+      &emsp;
+      <!--a-->
+    </div>
+  </section>
+  <section>
+    <div>
+      &emsp;
+      <!--b-->
+    </div>
+  </section>
+  <section id="bio">
+
+    <!--div class="section-header">
+      <h3 style="color: black;">BIO</h3>
+    </div-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-xs-4 col-sm-12" id="bio-pic">
+          <div class="work"> <a class="work-box"> <img src="IMG/000/logo.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-8 col-xs-8 col-sm-12">
+          <h3 class="media-heading wow fadeInDown animated text-center">
+            &emsp;This is Introduction
+          </h3>
+          <p>
+            &emsp;
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- gallery section -->
+  <section id="academic gallery" class="gallery section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="wow fadeInDown animated">Academic</h2>
+      </div>
+      <div class="row no-gutter" id="a001">
+        <div class="col-lg-4 col-md-6 col-sm-6 work"> <a href="https://ieeexplore.ieee.org/document/9534001"
+            class="work-box"> <img src="IMG/000/TSA-GAN.png" alt="">
+            <div class="overlay">
+              <div class="overlay-caption">
+                <p style="color: black;">TSA-GAN</p>
+              </div>
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 work"> <a class="work-box"> <img src="IMG/000/coming-soon.png" alt="">
+            <div class="overlay">
+              <div class="overlay-caption">
+                <p style="color: black;">coming soon</p>
+              </div>
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+      </div>
+  </section>
+
+  <section id="project  gallery" class="gallery section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="wow fadeInDown animated">Project</h2>
+      </div>
+      <div class="row no-gutter" id="p001">
+        <div class="col-lg-4 col-md-6 col-sm-6 work"> <a class="work-box"> <img src="IMG/000/coming-soon.png" alt="">
+            <div class="overlay">
+              <div class="overlay-caption">
+                <p style="color: black;">coming soon</p>
+              </div>
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+      </div>
+  </section>
+  <!-- preloader
+    ================================================== -->
+  <div id="preloader">
+    <div id="loader">
+      <div class="line-scale-pulse-out">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    !function () {
+
+      var timelimit = 50;
+
+      var open = false;
+
+      setInterval(function () {
+
+        var starttime = new Date();
+
+        debugger; if (new Date() - starttime > timelimit) {
+          alert("pls, NO DEBUGGING")
+          open = true;
+          window.stop();
+          var p = document.getElementById('bio')
+          p.remove();
+          p = document.getElementById('gallery')
+          p.remove();
+          var str = window.location.href
+          var index = str.lastIndexOf("/");
+          str = str.substring(0, index);
+          window.location.href = str + "/HTML/000/error.html"
+
+
+        } else {
+
+          open = false
+
+        }
+
+      }, 500)
+
+    }();
+
+
+
+  </script>
+  <script src="JS/share/jquery-3.2.1.min.js"></script>
+  <script src="JS/share/plugins.js"></script>
+  <script src="JS/share/preload.js"></script>
+</body>
+
+</html>
