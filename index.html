@@ -90,14 +90,12 @@
       <!--b-->
     </div>
   </section>
-  <section id="bio">
 
-    <!--div class="section-header">
-      <h3 style="color: black;">BIO</h3>
-    </div-->
+
+  <section id="introduction">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 col-xs-4 col-sm-12" id="bio-pic">
+        <div class="col-md-4 col-xs-4 col-sm-12">
           <div class="work"> <a class="work-box"> <img src="IMG/000/logo.png" alt="">
             </a>
           </div>
@@ -191,9 +189,11 @@
           alert("pls, NO DEBUGGING")
           open = true;
           window.stop();
-          var p = document.getElementById('bio')
+          var p = document.getElementById('introduction')
           p.remove();
-          p = document.getElementById('gallery')
+          p = document.getElementById('academic gallery')
+          p.remove();
+          p = document.getElementById('project  gallery')
           p.remove();
           var str = window.location.href
           var index = str.lastIndexOf("/");
