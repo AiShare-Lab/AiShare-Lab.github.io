@@ -1,0 +1,35 @@
+<div class="card-item col">
+    {% if member.web %}
+    <a href="{{ member.web }}">
+    {% else %}
+    <a href="">
+    {% endif %}
+      <div class="card hoverable">
+        <div class="row g-0">
+          {% if member.img %}
+          <div class="card-img col-md-6">
+            <img src="{{ member.img}}" alt="project thumbnail">
+          </div>
+          <div class="col-md-6">
+          {% else %}
+          <div class="col-md-12">
+          {% endif %}
+            <div class="card-body">
+              <h3 class="card-title text-lowercase">{{ member.name }}</h3>
+              <p class="card-text">{{ member.description }}</p>
+              <div class="row ml-1 mr-1 p-0">
+                {% if project.github %}
+                <div class="github-icon">
+                  <div class="icon" data-toggle="tooltip" title="Code Repository">
+                    <a href="{{ project.github }}" target="_blank"><i class="fab fa-github gh-icon"></i></a>
+                  </div>
+                </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  
