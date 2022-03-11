@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2021-09-10
+date: 2022-03-10
 inline: true
 ---
 
-Homepage is rebuilt through Jekyll :sparkles:
+AiShare Lab's homepage is rebuilt through Jekyll :sparkles:
