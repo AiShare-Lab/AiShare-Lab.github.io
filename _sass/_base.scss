@@ -9,9 +9,9 @@ p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
 }
 
 a, table.table a {
-  color: var(--global-theme-color);
+  color: var(--global-link-color);
   &:hover {
-    color: var(--global-theme-color);
+    color: var(--global-link-color);
     text-decoration: underline;
   }
   &:hover:after :not(.nav-item.dropdown) {

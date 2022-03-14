@@ -1,7 +1,8 @@
 ---
 layout: post
 date: 2022-03-11
-inline: true
+inline: false
+title: this is a title
+web: https://www.baidu.com
 ---
 
-This is another item
